@@ -49,3 +49,6 @@
 
 [pull]
   rebase = false
+[user]
+	email = leonardstrouk@gmail.com
+	name = Leonard Strouk
