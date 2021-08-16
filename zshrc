@@ -9,6 +9,11 @@ plugins=(git gitfast last-working-dir common-aliases zsh-syntax-highlighting his
 # (macOS-only) Prevent Homebrew from reporting - https://github.com/Homebrew/brew/blob/master/docs/Analytics.md
 export HOMEBREW_NO_ANALYTICS=1
 
+# handle pyenv path
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+
 # Disable warning about insecure completion-dependent directories
 ZSH_DISABLE_COMPFIX=true
 
@@ -77,3 +82,14 @@ if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.i
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc' ]; then . '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Leonard - Bootcamp Week 3
+export PYTHONPATH="/Users/lstrouk/code/L-Str/data-challenges/04-Decision-Science:$PYTHONPATH"
+
+# Leonard - Allow autocompletion in zsh
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
