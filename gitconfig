@@ -50,8 +50,8 @@
 [pull]
   rebase = false
 [user]
-	email = 52575299+L-Str@users.noreply.github.com
-	name = L-Str
+	email = leonardstrouk@gmail.com
+	name = Leonard Strouk
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
