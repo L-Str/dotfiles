@@ -11,3 +11,4 @@ export GOOGLE_APPLICATION_CREDENTIALS=/Users/lstrouk/code/L-Str/gcp/sparkle-stor
 
 # Added by Leonard
 alias jn="jupyter notebook"
+alias open_wd="explorer.exe"

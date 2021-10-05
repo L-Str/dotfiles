@@ -97,3 +97,4 @@ export PYTHONPATH="/Users/lstrouk/code/L-Str/data-challenges/04-Decision-Science
 #   autoload -Uz compinit
 #   compinit
 # fi
+export BROWSER='"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe"'
